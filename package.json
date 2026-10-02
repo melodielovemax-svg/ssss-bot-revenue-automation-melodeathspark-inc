@@ -1,0 +1,31 @@
+{
+  "name": "melodeathcli-melodie",
+  "version": "9.32.12",
+  "description": "Read-only Stripe catalog extraction and evidence verification CLI.",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./src/index.mjs",
+  "bin": {
+    "melodie": "./src/cli.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "check": "npm test",
+    "demo": "node scripts/demo.mjs",
+    "stripe": "node ./src/cli.mjs stripe"
+  },
+  "keywords": [
+    "storefront",
+    "licensing",
+    "loyalty",
+    "off-chain",
+    "audit-log"
+  ]
+}
